@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barrell</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div id="main-body">
+        <div id="main-head">
+          <img src="/img/Group 19.png" alt="logo" />
+          <div>
+            <img src="/img/Envelope.png" alt="" />
+            <p id="contact-us">Contact us</p>
+          </div>
+        </div>
+        <div id="body-content">
+          <h2>Welcome, lets create an account</h2>
+          <p id="description">
+            Barrel revolutionizes business management, enabling streamlined
+            spend, optimized procurement, and efficient growth.
+          </p>
+          <form action="/verify.html">
+            <div id="first-input">
+              <div id="input-1">
+                <label for="first-name"
+                  >First name
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    placeholder="Your first name"
+                    required
+                  />
+                </label>
+              </div>
+              <div id="input-2">
+                <label for="last-name"
+                  >Last name
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    placeholder="Your last name"
+                    required
+                  />
+                </label>
+              </div>
+            </div>
+            <label for="email"
+              >Email address
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email address"
+                required
+              />
+            </label>
+            <label for="password"
+              >Password
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password (min 8 characters)"
+                required
+              />
+            </label>
+            <p id="agreement">
+              By continuing you agree to the Barrel
+              <a href="">terms of service</a> and <a href="">privacy policy</a>.
+            </p>
+            <button type="submit">
+              Sign up <img src="/img/Check.png" alt="" />
+            </button>
+            <p id="sign-in">Already registered? <a href="">Sign in</a></p>
+          </form>
+        </div>
+        <div id="bottom">
+          <p>©2023 <span>Privacy & Terms</span></p>
+        </div>
+      </div>
+      <div id="img-div">
+        <img
+          src="img\visa-signature-business-card 1.png"
+          alt="Login-image"
+          id="image"
+        />
+      </div>
+    </main>
+  </body>
+</html>

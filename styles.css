@@ -1,0 +1,161 @@
+@font-face {
+  font-family: interphases;
+  src: url(fonts/TT\ Interphases\ Pro\ Trial\ Light.ttf);
+}
+@font-face {
+  font-family: interphases;
+  src: url(fonts/TT\ Interphases\ Pro\ Trial\ DemiBold.ttf);
+  font-weight: bold;
+}
+
+* {
+  font-family: interphases;
+}
+
+body {
+  background-color: #e4e7ec;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  /* height: 100vh; */
+}
+#main-body {
+  min-width: 45vw;
+  /* padding: 5rem; */
+  /* display: inline; */
+  margin: 0;
+}
+#body-content {
+  width: 60%;
+  margin: 70px auto;
+}
+
+#img-div {
+  width: 100%;
+  /* min-width: 80%; */
+}
+#image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+#main-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+  /* margin-bottom: -40px; */
+  padding: 0 30px;
+}
+#main-head div img {
+  vertical-align: middle;
+}
+
+#contact-us {
+  display: inline;
+}
+
+h2 {
+  padding-top: 1em;
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+
+p {
+  font-size: 0.7em;
+}
+
+#description {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+form label {
+  font-weight: bold;
+  font-size: 0.6em;
+  margin-left: 3px;
+  /* display: block; */
+  /* text-align: left; */
+  /* padding: 15px auto; */
+}
+input {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  min-height: 2rem;
+  border: 2px solid #d0d5dd;
+  font-size: 1.2em;
+  padding-left: 5px;
+  padding-right: 15px;
+}
+
+#first-name,
+#last-name {
+  display: inline;
+}
+
+#first-input {
+  display: flex;
+  justify-content: space-between;
+  /* margin-right: 0; */
+  /* border-right: ; */
+}
+#input-1 {
+  width: 45%;
+  /* margin-right: 5px; */
+}
+#input-2 {
+  width: 45%;
+}
+
+p a {
+  font-weight: bold;
+  color: #1d2939;
+}
+
+#agreement {
+  margin: 25px 0;
+}
+button {
+  border-radius: 4px;
+  background-color: #1d2939;
+  color: #e4e7ec;
+  border-color: #1d2939;
+  font-size: 0.7em;
+  height: 1.5rem;
+}
+button img {
+  vertical-align: middle;
+}
+
+#sign-in {
+  display: inline;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+#bottom {
+  padding-top: 30px;
+  /* margin-top: -10px; */
+}
+
+#bottom p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+
+#password {
+  background-image: url("/img/Vector.png");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: right center;
+  background-size: 15px;
+}
+
+/* #verify {
+  font-size: 1.2em;
+} */
