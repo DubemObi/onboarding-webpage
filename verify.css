@@ -118,3 +118,9 @@ button img {
   position: absolute;
   bottom: 30px;
 }
+
+@media (max-width: 600px) {
+  #img-div {
+    display: none;
+  }
+}

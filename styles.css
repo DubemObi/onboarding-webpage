@@ -156,6 +156,8 @@ button img {
   background-size: 15px;
 }
 
-/* #verify {
-  font-size: 1.2em;
-} */
+@media (max-width: 600px) {
+  #img-div {
+    display: none;
+  }
+}
