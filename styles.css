@@ -1,6 +1,6 @@
 @font-face {
   font-family: interphases;
-  src: url(fonts/TT\ Interphases\ Pro\ Trial\ Light.ttf);
+  src: url(fonts/TT\ Interphases\ Pro\ Trial\ Variable.ttf);
 }
 @font-face {
   font-family: interphases;
@@ -19,41 +19,56 @@ body {
 
 main {
   display: flex;
-  width: 100vw;
-  /* height: 100vh; */
+  width: 100%;
+  height: 100vh;
+  align-items: flex-end;
 }
 #main-body {
   min-width: 45vw;
-  /* padding: 5rem; */
-  /* display: inline; */
+  height: 100%;
   margin: 0;
 }
 #body-content {
   width: 60%;
-  margin: 70px auto;
-  margin-bottom: 100px;
+  height: 29.5rem;
+  margin: 4.375rem auto;
 }
 
 #img-div {
   width: 100%;
-  /* min-width: 80%; */
 }
-#image {
+#video {
   width: 100%;
   height: 100vh;
   object-fit: cover;
 }
+
 #main-head {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 48px;
   /* margin-bottom: -40px; */
-  padding: 0 30px;
+  padding: 0 2rem 0 2.5rem;
 }
-#main-head div img {
+#logos {
+  display: flex;
+  height: 100%;
+  width: 80px;
+  align-items: flex-start;
+}
+
+#logo-image {
+  width: 4.1rem;
+  height: 21.1px;
+}
+#beta-logo {
+  width: 0.94rem;
+}
+#contact img {
   vertical-align: middle;
+  width: 18px;
 }
 
 #contact-us {
@@ -61,27 +76,33 @@ main {
 }
 
 h2 {
-  padding-top: 1em;
-  font-size: 1.5rem;
-  margin-bottom: 6px;
+  padding-top: 1rem;
+  font-size: 1.625rem;
+  margin-bottom: 10px;
+  color: #1d2939;
+  font-weight: 584;
+  line-height: 27px;
 }
 
 p {
-  font-size: 0.7em;
+  font-size: 0.875rem;
 }
 
 #description {
+  color: #667085;
+  font-size: 0.875rem;
+  font-weight: 492;
+  line-height: 1.5rem;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 form label {
   font-weight: bold;
-  font-size: 0.6em;
+  font-size: 0.875rem;
   margin-left: 3px;
-  /* display: block; */
-  /* text-align: left; */
-  /* padding: 15px auto; */
+  color: #1d2939;
+  line-height: 1.25rem;
 }
 input {
   display: block;
@@ -89,10 +110,13 @@ input {
   border-radius: 4px;
   min-height: 2rem;
   border: 2px solid #d0d5dd;
-  font-size: 1.2em;
-  padding-left: 5px;
+  font-size: 0.875rem;
+  padding-left: 10px;
   padding-right: 15px;
   box-sizing: border-box;
+  height: 44px;
+  margin-bottom: 1.3rem;
+  color: #98a2b3;
 }
 
 #first-name,
@@ -102,13 +126,12 @@ input {
 
 #first-input {
   display: flex;
-  justify-content: space-between;
-  /* margin-right: 0; */
-  /* border-right: ; */
+  gap: 10px;
+  /* justify-content: space-between; */
 }
 #input-1,
 #input-2 {
-  width: 45%;
+  width: 50%;
 }
 
 p a {
@@ -117,15 +140,17 @@ p a {
 }
 
 #agreement {
-  margin: 25px 0;
+  margin: 1.5625rem 0;
+  font-size: 0.75rem;
 }
 button {
   border-radius: 4px;
   background-color: #1d2939;
   color: #e4e7ec;
   border-color: #1d2939;
-  font-size: 0.7em;
-  height: 1.5rem;
+  font-size: 0.875rem;
+  height: 2rem;
+  width: 6rem;
 }
 button img {
   vertical-align: middle;
@@ -137,8 +162,8 @@ button img {
   margin-left: 15px;
 }
 #bottom {
-  padding-top: 30px;
-  /* margin-top: -10px; */
+  padding-top: 10px;
+  margin-bottom: 49px;
 }
 
 #bottom p {
@@ -158,9 +183,20 @@ button img {
 @media (max-width: 600px) {
   main {
     display: block;
+    height: 100%;
   }
   #img-div {
     display: none;
+  }
+  h2 {
+    padding-top: 1rem;
+    font-size: 1.45rem;
+    margin-bottom: 6px;
+  }
+  #description {
+    font-size: 0.875rem;
+    line-height: 1.2rem;
+    margin-bottom: 1.3rem;
   }
   #first-input {
     display: block;
@@ -169,16 +205,46 @@ button img {
   #input-2 {
     width: 100%;
   }
+  input {
+    height: 40px;
+    margin-bottom: 0.8rem;
+  }
+
   #main-head {
     margin-top: 40px;
   }
   #body-content {
     margin: 60px auto;
+    /* height: 20rem; */
+  }
+  #agreement {
+    margin: 1rem 0;
+    font-size: 0.75rem;
   }
   #bottom {
-    padding-top: 0px;
+    padding-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
   h2 {
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  h2 {
+    padding-top: 1rem;
+    font-size: 1.45rem;
+    margin-bottom: 6px;
+  }
+  #description {
+    font-size: 0.875rem;
+    line-height: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+  input {
+    height: 40px;
+    margin-bottom: 1rem;
   }
 }
