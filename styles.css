@@ -17,11 +17,70 @@ body {
   margin: 0;
 }
 
+@media (max-width: 600px) {
+  main {
+    display: block;
+    height: 100%;
+    overflow: scroll;
+  }
+  #img-div {
+    display: none;
+  }
+  h2 {
+    /* padding-top: 1rem; */
+    font-size: 1.45rem;
+    margin-bottom: 6px;
+  }
+  #description {
+    font-size: 0.875rem;
+    line-height: 1.2rem;
+    margin-bottom: 1.3rem;
+  }
+  #first-input {
+    display: block;
+  }
+  #input-1,
+  #input-2 {
+    width: 100%;
+  }
+  input {
+    height: 40px;
+    margin-bottom: 0.8rem;
+  }
+
+  #main-head {
+    margin-top: 40px;
+  }
+  #body-content {
+    /* margin: 60px auto; */
+    /* height: 45rem; */
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+  #agreement {
+    margin: 1rem 0;
+    font-size: 0.75rem;
+  }
+  #bottom {
+    padding-top: 20px;
+    width: 100%;
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  #sign-in-options {
+    display: flex;
+    align-items: center;
+  }
+}
+
 main {
   display: flex;
   width: 100%;
   height: 100vh;
-  align-items: flex-end;
+  /* align-items: flex-end; */
 }
 #main-body {
   min-width: 45vw;
@@ -36,11 +95,14 @@ main {
 
 #img-div {
   width: 100%;
+  /* height: 100%; */
 }
 #video {
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  /* display: block; */
+  vertical-align: middle;
 }
 
 #main-head {
@@ -178,58 +240,6 @@ button img {
   background-origin: content-box;
   background-position: right center;
   background-size: 15px;
-}
-
-@media (max-width: 600px) {
-  main {
-    display: block;
-    height: 100%;
-  }
-  #img-div {
-    display: none;
-  }
-  h2 {
-    padding-top: 1rem;
-    font-size: 1.45rem;
-    margin-bottom: 6px;
-  }
-  #description {
-    font-size: 0.875rem;
-    line-height: 1.2rem;
-    margin-bottom: 1.3rem;
-  }
-  #first-input {
-    display: block;
-  }
-  #input-1,
-  #input-2 {
-    width: 100%;
-  }
-  input {
-    height: 40px;
-    margin-bottom: 0.8rem;
-  }
-
-  #main-head {
-    margin-top: 40px;
-  }
-  #body-content {
-    margin: 60px auto;
-    /* height: 20rem; */
-  }
-  #agreement {
-    margin: 1rem 0;
-    font-size: 0.75rem;
-  }
-  #bottom {
-    padding-top: 20px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-  h2 {
-    margin-top: 0;
-  }
 }
 
 @media screen and (max-width: 1190px) {
